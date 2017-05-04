@@ -1,27 +1,8 @@
-RECENT CHANGES:
-* (19 Apr 2016) Define version 2 payment codes
-* (17 Apr 2016) Clarify usage of outpoints in notification transactions
-* (18 Dec 2015) Update explanations to resolve FAQs
-
-<pre>
-  BIP: 47
-  Layer: Applications
-  Title: Reusable Payment Codes for Hierarchical Deterministic Wallets
-  Author: Justus Ranvier <justus@openbitcoinprivacyproject.org>
-  Comments-Summary: Unanimously Discourage for implementation
-  Comments-URI: https://github.com/bitcoin/bips/wiki/Comments:BIP-0047
-  Status: Draft
-  Type: Informational
-  Created: 2015-04-24
-</pre>
-
 ==Abstract==
 
 This BIP defines a technique for creating a payment code which can be publicly advertised and associated with a real-life identity without creating the loss of security or privacy inherent to P2PKH address reuse.
 
 This BIP is a particular application of BIP43 and is intended to supplement HD wallets which implement BIP44.
-
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
 
 ==Motivation==
 
@@ -97,10 +78,10 @@ Currently specified versions:
 
 * Version 1
 ** Address type: P2PKH
-** Notification type: address
+** Notification type: address.bitcoin
 * Version 2
 ** Address type: P2PKH
-** Notification type: bloom-multisig
+** Notification type: bloom-multisig.bitcoin
 
 ===Recommended Versions===
 
